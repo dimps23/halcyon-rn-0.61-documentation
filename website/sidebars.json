@@ -1,0 +1,111 @@
+{
+  "docs": {
+    "Getting started": [
+      "getting-started/introduction",
+      "getting-started/installation",
+      {
+        "type": "subcategory",
+        "label": "Project Setup",
+        "ids": [
+          "getting-started/project-setup/overview",
+          "getting-started/project-setup/install-default-packages",
+          "getting-started/project-setup/copy-src-folder",
+          "getting-started/project-setup/config-babelrc",
+          "getting-started/project-setup/jsconfig",
+          "getting-started/project-setup/metro",
+          "getting-started/project-setup/env",
+          "getting-started/project-setup/react-native-config",
+          "getting-started/project-setup/eslint",
+          "getting-started/project-setup/hermes",
+          "getting-started/project-setup/linking-custom-fonts"
+        ]
+      }
+    ],
+    "Guidelines": [
+      "guidelines/overview",
+      "guidelines/platform-handling",
+      "guidelines/best-practices",
+      "guidelines/code-snippets",
+      "guidelines/proptypes",
+      "guidelines/proper-debugging",
+      "guidelines/refactoring",
+      "guidelines/splitting-page-into-smaller-components",
+      "guidelines/env-variables",
+      "guidelines/theme-variables",
+      "guidelines/stateless-functions"
+    ],
+    "State Management": [
+      "state-management/overview",
+      "state-management/redux",
+      "state-management/redux-saga",
+      "state-management/redux-thunk",
+      "state-management/redux-logger"
+    ],
+    "Packages": [
+      "packages/ui",
+      "packages/navigation",
+      "packages/native-hardware-access"
+    ],
+    "Custom Components": [
+      "components/head",
+      "components/paragraph",
+      "components/input",
+      "components/modal-loader",
+      "components/image-background"
+    ],
+    "Rules": [
+      "rules/file-structuring",
+      "rules/code-structuring",
+      "rules/style",
+      "rules/naming-convention",
+      "rules/destructuring"
+    ],
+    "App Testing": [
+      "app-testing/unit",
+      "app-testing/integration",
+      "app-testing/e2e"
+    ],
+    "Deployment": [
+      "deployment/ios",
+      {
+        "type": "subcategory",
+        "label": "Android",
+        "ids": [
+          "deployment/android/overview",
+          "deployment/android/generating-key"
+        ]
+      }
+    ],
+    "Others": [
+      "others/overview",
+      {
+        "type": "subcategory",
+        "label": "Helpers",
+        "ids": [
+          "others/helpers/overview",
+          "others/helpers/date-formatter",
+          "others/helpers/time-elapsed",
+          "others/helpers/pluralizer"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Push Notification",
+        "ids": [
+          "others/push-notification/overview",
+          "others/push-notification/firebase",
+          "others/push-notification/one-signal"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Fast Image",
+        "ids": [
+          "others/fast-image/overview",
+          "others/fast-image/image-caching",
+          "others/fast-image/image-preloading"
+        ]
+      }
+    ]
+  }
+}
