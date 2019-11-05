@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>&lt;Input /&gt; · React-Native documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Overview"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="&lt;Input /&gt; · React-Native documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://dimps23.github.io/documentation/"/><meta property="og:description" content="## Overview"/><meta property="og:image" content="https://dimps23.github.io/documentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://dimps23.github.io/documentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentation/img/logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css"/><link rel="alternate" type="application/atom+xml" href="https://dimps23.github.io/documentation/blog/atom.xml" title="React-Native documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://dimps23.github.io/documentation/blog/feed.xml" title="React-Native documentation Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="/documentation/js/sidenav.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/documentation/js/code-block-buttons.js"></script><script src="/documentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentation/css/prism.css"/><link rel="stylesheet" href="/documentation/css/main.css"/><script src="/documentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/logo.svg" alt="React-Native documentation"/><h2 class="headerTitleWithLogo">React-Native documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/documentation/docs/getting-started/introduction" target="_self">Docs</a></li><li class=""><a href="/documentation/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Custom Components</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/installation">Installation</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Project Setup</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/install-default-packages">Install default packages</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/copy-src-folder">Copy src folder</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/config-babelrc">.babelrc</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/jsconfig">jsconfig.json</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/metro">metro.config.js</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/env">.env</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/react-native-config">react-native.config.js</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/eslint">.eslintrc.js</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/hermes">Hermes JavaScript engine</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/getting-started/project-setup/linking-custom-fonts">Custom fonts</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guidelines</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/platform-handling">Platform handling</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/best-practices">Best practices</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/code-snippets">Code snippets (VSCode)</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/proptypes">PropTypes</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/proper-debugging">Proper Debugging</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/refactoring">Refactoring</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/splitting-page-into-smaller-components">Splitting page into smaller components</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/env-variables">ENV variables</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/guidelines/theme-variables">Theme variables</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">State Management</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/state-management/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/state-management/redux">Redux</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/state-management/redux-saga">redux-saga</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/state-management/redux-thunk">redux-thunk</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/state-management/redux-logger">redux-logger</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Packages</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/packages/ui">UI</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/packages/navigation">Navigation</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/packages/native-hardware-access">Native hardware access</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Custom Components</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/components/head">&lt;Head /&gt;</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/components/paragraph">&lt;Paragraph /&gt;</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/components/input">&lt;Input /&gt;</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/components/modal-loader">&lt;ModalLoader /&gt;</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/components/image-background">&lt;ImageBackground /&gt;</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Rules</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/rules/file-structuring">File structuring</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/rules/code-structuring">Code structuring</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/rules/style">Style</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/rules/naming-convention">Naming Convention</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/rules/destructuring">Destructuring</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">App Testing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/app-testing/unit">Unit Testing</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/app-testing/integration">Integration Testing</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/app-testing/e2e">E2E Testing</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Deployment</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/deployment/ios">iOS</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Android</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/deployment/android/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/deployment/android/generating-key">Generating Key</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Others</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/others/overview">Overview</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Helpers</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/others/helpers/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/helpers/date-formatter">dateFormatter()</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/helpers/time-elapsed">timeElapsed()</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/helpers/pluralizer">pluralize()</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Push Notification</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/others/push-notification/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/push-notification/firebase">Firebase</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/push-notification/one-signal">OneSignal</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">Fast Image</h4><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/others/fast-image/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/fast-image/image-caching">Image Caching</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/others/fast-image/image-preloading">Image Preloading</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">&lt;Input /&gt;</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+<p>TextInput props supported. See <strong><a href="https://facebook.github.io/react-native/docs/textinput#props">TextInput props</a></strong> for more info</p>
+<ul>
+<li><h3><a class="anchor" aria-hidden="true" id="example-of-using-textinput-props"></a><a href="#example-of-using-textinput-props" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>example of using TextInput props</h3>
+</li>
+</ul>
+<pre><code class="hljs css language-diff">&lt;Input
+  value={email}
+  placeholder="Email"
+  onChangeText={v =&gt; this.setState({ email: v })}
+  borderRadius={4}
+  spacing={10}
+  shadow
+  elevation={2}
+  leftIcon="envelope"
+  leftIconSize={14}
+  leftBorderColor={COLOR.BLACK}
+<span class="hljs-addition">+ keyboardType="email-address" // this is a TextInput prop</span>
+<span class="hljs-addition">+ autoCapitalize="none" // this is also a TextInput prop</span>
+/&gt;
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="usage"></a><a href="#usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<h3><a class="anchor" aria-hidden="true" id="no-shadow-border"></a><a href="#no-shadow-border" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>no shadow/border</h3>
+<pre><code class="hljs css language-js"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Input</span></span>
+  <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>email<span class="token punctuation">}</span></span>
+  <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Email<span class="token punctuation">"</span></span>
+  <span class="token attr-name">onChangeText</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token parameter">v</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> email<span class="token punctuation">:</span> v <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">spacing</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">leftIcon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>envelope<span class="token punctuation">"</span></span>
+  <span class="token attr-name">leftIconSize</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">14</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">leftBorderColor</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token constant">COLOR</span><span class="token punctuation">.</span><span class="token constant">BLACK</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">keyboardType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email-address<span class="token punctuation">"</span></span>
+<span class="token punctuation">/></span></span>
+</code></pre>
+<blockquote>
+<p>This would produce something like this <img src="/documentation/docs/assets/input-without-border.png" alt="alt-text"></p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="with-shadow"></a><a href="#with-shadow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>with shadow</h3>
+<pre><code class="hljs css language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Input</span></span>
+  <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>email<span class="token punctuation">}</span></span>
+  <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Email<span class="token punctuation">"</span></span>
+  <span class="token attr-name">onChangeText</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token parameter">v</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> email<span class="token punctuation">:</span> v <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">spacing</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">shadow</span>
+  <span class="token attr-name">elevation</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">leftIcon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>envelope<span class="token punctuation">"</span></span>
+  <span class="token attr-name">leftIconSize</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">14</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">leftBorderColor</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token constant">COLOR</span><span class="token punctuation">.</span><span class="token constant">BLACK</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">keyboardType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email-address<span class="token punctuation">"</span></span>
+<span class="token punctuation">/></span></span>
+</code></pre>
+<ul>
+<li><p><code>shadow</code> prop has been passed with a value of <code>true</code></p></li>
+<li><p><code>elevation</code> prop will be required if shadow is <code>true</code></p>
+<blockquote>
+<p>This would produce something like this <img src="/documentation/docs/assets/input-with-shadow.png" alt="alt-text"></p>
+</blockquote></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="with-border"></a><a href="#with-border" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>with border</h3>
+<pre><code class="hljs css language-js"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Input</span></span>
+  <span class="token attr-name">value</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>email<span class="token punctuation">}</span></span>
+  <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Email<span class="token punctuation">"</span></span>
+  <span class="token attr-name">onChangeText</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token parameter">v</span> <span class="token operator">=></span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> email<span class="token punctuation">:</span> v <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">spacing</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">borderWidth</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">0.7</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">borderColor</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token constant">COLOR</span><span class="token punctuation">.</span><span class="token constant">BLACK</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">leftIcon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>envelope<span class="token punctuation">"</span></span>
+  <span class="token attr-name">leftIconSize</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">14</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">leftBorderColor</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token constant">COLOR</span><span class="token punctuation">.</span><span class="token constant">BLACK</span><span class="token punctuation">}</span></span>
+  <span class="token attr-name">keyboardType</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email-address<span class="token punctuation">"</span></span>
+<span class="token punctuation">/></span></span>
+</code></pre>
+<ul>
+<li><p><code>borderWidth</code> : pass the thickness of the border</p></li>
+<li><p><code>borderColor</code> : required! otherwise it returns transparent</p>
+<blockquote>
+<p>This would produce something like this <img src="/documentation/docs/assets/input-with-border.png" alt="alt-text"></p>
+</blockquote></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="props"></a><a href="#props" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Props</h2>
+<h3><a class="anchor" aria-hidden="true" id="backdropcolor"></a><a href="#backdropcolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>backdropColor</h3>
+<pre><code class="hljs"><span class="hljs-keyword">backdropColor </span>:   <span class="hljs-keyword">string </span> <span class="hljs-title">| optional |</span>  COLOR.LIGHT
+</code></pre>
+<ul>
+<li>the background color of the input</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="shadow"></a><a href="#shadow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>shadow</h3>
+<pre><code class="hljs">shadow :    <span class="hljs-built_in">bool</span>    | <span class="hljs-keyword">optional</span> |  <span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>if true <code>elevation</code> will be required for the <code>shadow</code> to work.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="elevation"></a><a href="#elevation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>elevation</h3>
+<pre><code class="hljs">elevation :   number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">0</span>
+</code></pre>
+<ul>
+<li><code>nullified</code> if <code>shadow</code> is <code>false</code>. (so it is dependent on the shadow prop).</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="spacing"></a><a href="#spacing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>spacing</h3>
+<pre><code class="hljs"><span class="hljs-built_in">spacing</span> :   <span class="hljs-keyword">number</span>  | <span class="hljs-keyword">optional</span> |  <span class="hljs-number">5</span>
+</code></pre>
+<ul>
+<li>used in multiple instances like <em>left and right padding of</em> <code>&lt;Input /&gt;</code> container, spaces between components inside <code>&lt;Input /&gt;</code> and many more. See the source code for reference <strong><code>(components/inputs/Input.jsx)</code></strong></li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="borderradius"></a><a href="#borderradius" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>borderRadius</h3>
+<pre><code class="hljs">borderRadius :    number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">0</span>
+</code></pre>
+<ul>
+<li><code>borderRadius</code> of the container.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="borderwidth"></a><a href="#borderwidth" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>borderWidth</h3>
+<pre><code class="hljs">borderWidth :   number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">0</span>
+</code></pre>
+<ul>
+<li>if it has a value you need to pass <code>borderColor</code> prop otherwise it will return a <code>transparent</code> color.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="bordercolor"></a><a href="#bordercolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>borderColor</h3>
+<pre><code class="hljs">borderColor :   string  | <span class="hljs-type">optional</span> |  <span class="hljs-type">COLOR</span>.TRANSPARENT | <span class="hljs-type">'transparent</span>'
+</code></pre>
+<ul>
+<li><strong>required!</strong> if <code>borderWidth</code> has value otherwise it returns <code>transparent</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="leftbutton"></a><a href="#leftbutton" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftButton</h3>
+<pre><code class="hljs">leftButton :    <span class="hljs-built_in">bool</span>    | <span class="hljs-keyword">optional</span> |  <span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>if <code>true</code> <code>leftIcon</code> can be tapped.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="leftbuttonpress"></a><a href="#leftbuttonpress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftButtonPress</h3>
+<pre><code class="hljs">leftButtonPress :   <span class="hljs-function"><span class="hljs-keyword">func</span>    | <span class="hljs-title">optional</span> |  <span class="hljs-params">()</span> =&gt; {}</span>
+</code></pre>
+<ul>
+<li>the tap response if <code>leftButton</code> is <code>true</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="lefticon"></a><a href="#lefticon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftIcon</h3>
+<pre><code class="hljs">leftIcon :    string  | optional |  <span class="hljs-string">''</span>
+</code></pre>
+<ul>
+<li>uses react-native-vector-icons/FontAwesome5 | name of the icon you want to use. see <strong><a href="https://fontawesome.com/icons?d=gallery">font awesome icons</a></strong> to see what icon names you can use.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="lefticonsize"></a><a href="#lefticonsize" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftIconSize</h3>
+<pre><code class="hljs">leftIconSize :    number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">20</span>
+</code></pre>
+<ul>
+<li>the <code>size</code> of the left <code>icon</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="lefticoncolor"></a><a href="#lefticoncolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftIconColor</h3>
+<pre><code class="hljs"><span class="hljs-symbol">leftIconColor</span> :   <span class="hljs-keyword">string </span> <span class="hljs-title">| optional |</span>  COLOR.<span class="hljs-keyword">BLACK
+</span></code></pre>
+<ul>
+<li>the <code>color</code> of the left <code>icon</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="leftbordercolor"></a><a href="#leftbordercolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftBorderColor</h3>
+<pre><code class="hljs">leftBorderColor :   string  | optional |  <span class="hljs-string">''</span>
+</code></pre>
+<ul>
+<li>if it has a value <code>leftBorderThickness</code> will be needed for this to work.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="leftborderthickness"></a><a href="#leftborderthickness" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>leftBorderThickness</h3>
+<pre><code class="hljs">leftBorderThickness :   number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">0</span>
+</code></pre>
+<ul>
+<li><code>nullified</code> if <code>leftBorderColor</code> has no <code>value</code>. (dependent on the <code>leftBorderColor</code> prop).</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="rightbutton"></a><a href="#rightbutton" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rightButton</h3>
+<pre><code class="hljs">rightButton :   <span class="hljs-built_in">bool</span>    | <span class="hljs-keyword">optional</span> |  <span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>if <code>true</code> <code>rightIcon</code> can be tapped.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="rightbuttonpress"></a><a href="#rightbuttonpress" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rightButtonPress</h3>
+<pre><code class="hljs">rightButtonPress :    <span class="hljs-function"><span class="hljs-keyword">func</span>    | <span class="hljs-title">optional</span> |  <span class="hljs-params">()</span> =&gt; {}</span>
+</code></pre>
+<ul>
+<li>the tap response if <code>rightButton</code> is <code>true</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="righticon"></a><a href="#righticon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rightIcon</h3>
+<pre><code class="hljs">rightIcon :   string  | optional |  <span class="hljs-string">''</span>
+</code></pre>
+<ul>
+<li>uses react-native-vector-icons/FontAwesome5 | name of the icon you want to use. see <strong><a href="https://fontawesome.com/icons?d=gallery">font awesome icons</a></strong> to see what icon names you can use.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="righticonsize"></a><a href="#righticonsize" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rightIconSize</h3>
+<pre><code class="hljs">rightIconSize :   number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">20</span>
+</code></pre>
+<ul>
+<li>the <code>size</code> of the right <code>icon</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="righticoncolor"></a><a href="#righticoncolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rightIconColor</h3>
+<pre><code class="hljs"><span class="hljs-symbol">rightIconColor</span> :    <span class="hljs-keyword">string </span> <span class="hljs-title">| optional |</span>  COLOR.<span class="hljs-keyword">BLACK
+</span></code></pre>
+<ul>
+<li>the <code>color</code> of the right <code>icon</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="rightbordercolor"></a><a href="#rightbordercolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rightBorderColor</h3>
+<pre><code class="hljs">rightBorderColor :    string  | optional |  <span class="hljs-string">''</span>
+</code></pre>
+<ul>
+<li>if it has a value <code>rightBorderThickness</code> will be needed for this to work.</li>
+</ul>
+<hr>
+<p>###rightBorderThickness</p>
+<pre><code class="hljs">rightBorderThickness :    number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">0</span>
+</code></pre>
+<ul>
+<li><code>nullified</code> if <code>rightBorderColor</code> has no value. (dependent on the <code>rightBorderColor</code> prop).</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="value"></a><a href="#value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>value</h3>
+<pre><code class="hljs"><span class="hljs-keyword">value</span> :   <span class="hljs-keyword">string</span>  | required |  
+</code></pre>
+<ul>
+<li>the <code>value</code> of the <code>TextInput</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="onchangetext"></a><a href="#onchangetext" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onChangeText</h3>
+<pre><code class="hljs">onChangeText :    <span class="hljs-function"><span class="hljs-keyword">func</span>    | <span class="hljs-title">required</span> |  </span>
+</code></pre>
+<ul>
+<li><code>callback</code> when <code>text</code> is changed or you write something.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="placeholder"></a><a href="#placeholder" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>placeholder</h3>
+<pre><code class="hljs">placeholder :   string  | optional |  <span class="hljs-string">''</span>
+</code></pre>
+<ul>
+<li>the <code>placeholder</code> of the <code>input</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="placeholdercolor"></a><a href="#placeholdercolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>placeholderColor</h3>
+<pre><code class="hljs">placeholderColor :    string  | <span class="hljs-type">optional</span> |  <span class="hljs-type">COLOR</span>.GRAY
+</code></pre>
+<ul>
+<li>the <code>color</code> of the <code>placeholder</code> defaults to <code>gray</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="securetext"></a><a href="#securetext" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>secureText</h3>
+<pre><code class="hljs">secureText :    <span class="hljs-built_in">bool</span>    | <span class="hljs-keyword">optional</span> |  <span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>if <code>true</code> <code>text</code> value would be <code>hidden</code>. (used mostly for passwords).</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="center"></a><a href="#center" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>center</h3>
+<pre><code class="hljs">center :    <span class="hljs-built_in">bool</span>    | <span class="hljs-keyword">optional</span> |  <span class="hljs-literal">false</span>
+</code></pre>
+<ul>
+<li>centers the <code>value/placeholder</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="inputsize"></a><a href="#inputsize" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inputSize</h3>
+<pre><code class="hljs">inputSize :   number  | <span class="hljs-type">optional</span> |  <span class="hljs-type">12</span>
+</code></pre>
+<ul>
+<li><code>size</code> of the <code>font</code> of the <code>value/placeholder</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="fontfamily"></a><a href="#fontfamily" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fontFamily</h3>
+<pre><code class="hljs">fontFamily :    string  | optional |  <span class="hljs-string">'roboto-regular'</span>
+</code></pre>
+<ul>
+<li><code>fontFamily</code> of the <code>value/placeholder</code>.</li>
+</ul>
+<hr>
+<h3><a class="anchor" aria-hidden="true" id="fontcolor"></a><a href="#fontcolor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fontColor</h3>
+<pre><code class="hljs"><span class="hljs-symbol">fontColor</span> :   <span class="hljs-keyword">string </span> <span class="hljs-title">| optional |</span>  COLOR.<span class="hljs-keyword">BLACK
+</span></code></pre>
+<ul>
+<li><code>color</code> of the <code>value/placeholder</code>.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/components/paragraph"><span class="arrow-prev">← </span><span>&lt;Paragraph /&gt;</span></a><a class="docs-next button" href="/documentation/docs/components/modal-loader"><span class="function-name-prevnext">&lt;ModalLoader /&gt;</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#overview">Overview</a><ul class="toc-headings"><li><a href="#example-of-using-textinput-props">example of using TextInput props</a></li></ul></li><li><a href="#usage">Usage</a><ul class="toc-headings"><li><a href="#no-shadow-border">no shadow/border</a></li><li><a href="#with-shadow">with shadow</a></li><li><a href="#with-border">with border</a></li></ul></li><li><a href="#props">Props</a><ul class="toc-headings"><li><a href="#backdropcolor">backdropColor</a></li><li><a href="#shadow">shadow</a></li><li><a href="#elevation">elevation</a></li><li><a href="#spacing">spacing</a></li><li><a href="#borderradius">borderRadius</a></li><li><a href="#borderwidth">borderWidth</a></li><li><a href="#bordercolor">borderColor</a></li><li><a href="#leftbutton">leftButton</a></li><li><a href="#leftbuttonpress">leftButtonPress</a></li><li><a href="#lefticon">leftIcon</a></li><li><a href="#lefticonsize">leftIconSize</a></li><li><a href="#lefticoncolor">leftIconColor</a></li><li><a href="#leftbordercolor">leftBorderColor</a></li><li><a href="#leftborderthickness">leftBorderThickness</a></li><li><a href="#rightbutton">rightButton</a></li><li><a href="#rightbuttonpress">rightButtonPress</a></li><li><a href="#righticon">rightIcon</a></li><li><a href="#righticonsize">rightIconSize</a></li><li><a href="#righticoncolor">rightIconColor</a></li><li><a href="#rightbordercolor">rightBorderColor</a></li><li><a href="#value">value</a></li><li><a href="#onchangetext">onChangeText</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#placeholdercolor">placeholderColor</a></li><li><a href="#securetext">secureText</a></li><li><a href="#center">center</a></li><li><a href="#inputsize">inputSize</a></li><li><a href="#fontfamily">fontFamily</a></li><li><a href="#fontcolor">fontColor</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/logo.svg" alt="React-Native documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentation/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentation/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentation/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Halcyon Digital Media</section></footer></div></body></html>

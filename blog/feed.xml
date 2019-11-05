@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>React-Native documentation Blog</title>
+        <link>https://dimps23.github.io/documentation/blog</link>
+        <description>The best place to stay up-to-date with the latest React-Native documentation news and events.</description>
+        <lastBuildDate>Thu, 01 Jan 1970 00:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>React-Native documentation Blog</title>
+            <url>https://dimps23.github.io/documentation/img/logo.svg</url>
+            <link>https://dimps23.github.io/documentation/blog</link>
+        </image>
+        <copyright>Copyright © 2019 Halcyon Digital Media</copyright>
+        <item>
+            <title><![CDATA[Halcyon RN starter kit v1.0 is live!]]></title>
+            <link>https://dimps23.github.io/documentation/blog/2019/11/5/halcyon-rn-starter-kit-v1.0-is-live.html</link>
+            <guid>https://dimps23.github.io/documentation/blog/2019/11/5/halcyon-rn-starter-kit-v1.0-is-live.html</guid>
+            <pubDate>Thu, 01 Jan 1970 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Halcyon Digital Media designs has published it's own starter kit! Check out <a href="./docs/getting-started/project-setup/overview">Project Setup</a> to get started.</p> ]]></description>
+        </item>
+    </channel>
+</rss>
