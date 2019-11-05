@@ -65,7 +65,8 @@ module.exports = {
           allow:
           [
             "UNSAFE_componentWillMount",
-            "UNSAFE_componentWillUpdate"
+            "UNSAFE_componentWillUpdate",
+            "UNSAFE_componentWillReceiveProps"
           ]
         }
       ],

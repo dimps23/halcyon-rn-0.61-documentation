@@ -17,7 +17,8 @@
           "getting-started/project-setup/react-native-config",
           "getting-started/project-setup/eslint",
           "getting-started/project-setup/hermes",
-          "getting-started/project-setup/linking-custom-fonts"
+          "getting-started/project-setup/linking-custom-fonts",
+          "getting-started/project-setup/test"
         ]
       }
     ],
