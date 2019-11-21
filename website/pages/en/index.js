@@ -13,7 +13,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { Component } from 'react'
+ const React = require('react')
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
@@ -21,7 +21,7 @@ const { MarkdownBlock } = CompLibrary; /* Used to read markdown */
 const { Container } = CompLibrary;
 const { GridBlock } = CompLibrary;
 
-class HomeSplash extends Component {
+class HomeSplash extends React.Component {
   render() {
     const { siteConfig, language = '' } = this.props;
     const { baseUrl, docsUrl } = siteConfig;
@@ -81,7 +81,7 @@ class HomeSplash extends Component {
   }
 }
 
-class Index extends Component {
+class Index extends React.Component {
   render() {
     const { config: siteConfig, language = '' } = this.props;
     const { baseUrl } = siteConfig;
