@@ -13,7 +13,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
+import React, { Component } from 'react'
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
@@ -21,7 +21,7 @@ const { MarkdownBlock } = CompLibrary; /* Used to read markdown */
 const { Container } = CompLibrary;
 const { GridBlock } = CompLibrary;
 
-class HomeSplash extends React.Component {
+class HomeSplash extends Component {
   render() {
     const { siteConfig, language = '' } = this.props;
     const { baseUrl, docsUrl } = siteConfig;
@@ -81,7 +81,7 @@ class HomeSplash extends React.Component {
   }
 }
 
-class Index extends React.Component {
+class Index extends Component {
   render() {
     const { config: siteConfig, language = '' } = this.props;
     const { baseUrl } = siteConfig;
@@ -100,18 +100,23 @@ class Index extends React.Component {
       </Container>
     );
 
+    const PromoSection = props => (
+      <div className="section promoSection">
+        <div className="promoRow">
+          <div className="pluginRowBlock">{props.children}</div>
+        </div>
+      </div>
+    );
+
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
         style={{ textAlign: 'left' }}
       >
-        {/* <h2>Features</h2>
-        <MarkdownBlock>
-          &gt; ### Image caching
-        </MarkdownBlock>
-        <MarkdownBlock>
-          - Using react-native-fast-image
-        </MarkdownBlock> */}
+        <h2>Join us on Discord</h2>
+        <PromoSection>
+          <iframe src="https://discordapp.com/widget?id=595526229524873216&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        </PromoSection>
       </div>
     );
 
@@ -215,11 +220,11 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
           <LearnHow />
           <TryOut />
           {/* <Description /> */}
           <Showcase />
+          <FeatureCallout />
         </div>
       </div>
     );
